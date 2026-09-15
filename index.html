@@ -225,22 +225,26 @@
     background:var(--orange-tint); padding:4px 9px; border-radius:6px;
   }
   .cert-badge{
+    display:none;
     margin-top:16px;
     padding-top:16px;
     border-top:1px dashed var(--line);
-    display:flex; align-items:center; justify-content:center;
-    min-height:64px;
+    align-items:center; justify-content:center;
   }
-  .cert-badge img{max-width:64px; max-height:64px; display:none; object-fit:contain;}
-  .badge-placeholder{
-    font-family:var(--font-data);
-    font-size:11px;
-    color:var(--text-muted);
-    border:1px dashed var(--line);
+  .cert-badge a{display:block; line-height:0;}
+  .cert-badge img{
+    max-width:120px;
+    max-height:120px;
+    width:auto;height:auto;
+    display:block;
+    object-fit:cover;
     border-radius:8px;
-    padding:10px 14px;
-    text-align:center;
+    border:1px solid var(--line);
+    background:#fff;
+    box-shadow:0 8px 20px -10px rgba(0,0,0,0.5);
+    transition:transform .15s ease, border-color .15s ease;
   }
+  .cert-badge a:hover img{transform:translateY(-2px) scale(1.03); border-color:var(--orange);}
 
   /* ---------- Bottom contact bar ---------- */
   .contact-bar{
@@ -425,8 +429,9 @@
         <p>IBM SkillsBuild</p>
         <span class="cert-date">Aug 2026</span>
         <div class="cert-badge">
-          <img src="badge-1.png" alt="Data Fundamentals badge" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
-          <span class="badge-placeholder">Add badge</span>
+          <a href="badge-1.png" target="_blank" rel="noopener">
+            <img src="badge-1.png" alt="Data Fundamentals badge" onload="this.closest('.cert-badge').style.display='flex';" onerror="this.closest('a').remove();">
+          </a>
         </div>
       </div>
       <div class="cert-card">
@@ -434,8 +439,9 @@
         <p>DataCamp</p>
         <span class="cert-date">Sep 2026</span>
         <div class="cert-badge">
-          <img src="badge-2.png" alt="Introduction to Python badge" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
-          <span class="badge-placeholder">Add badge</span>
+          <a href="badge-2.png" target="_blank" rel="noopener">
+            <img src="badge-2.png" alt="Introduction to Python badge" onload="this.closest('.cert-badge').style.display='flex';" onerror="this.closest('a').remove();">
+          </a>
         </div>
       </div>
       <div class="cert-card">
@@ -443,8 +449,9 @@
         <p>ISTQB</p>
         <span class="cert-date">Certified</span>
         <div class="cert-badge">
-          <img src="badge-3.png" alt="ISTQB Foundation Level badge" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
-          <span class="badge-placeholder">Add badge</span>
+          <a href="badge-3.png" target="_blank" rel="noopener">
+            <img src="badge-3.png" alt="ISTQB Foundation Level badge" onload="this.closest('.cert-badge').style.display='flex';" onerror="this.closest('a').remove();">
+          </a>
         </div>
       </div>
     </div>

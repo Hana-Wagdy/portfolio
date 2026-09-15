@@ -224,6 +224,23 @@
     font-family:var(--font-data); font-size:11px; color:var(--orange);
     background:var(--orange-tint); padding:4px 9px; border-radius:6px;
   }
+  .cert-badge{
+    margin-top:16px;
+    padding-top:16px;
+    border-top:1px dashed var(--line);
+    display:flex; align-items:center; justify-content:center;
+    min-height:64px;
+  }
+  .cert-badge img{max-width:64px; max-height:64px; display:none; object-fit:contain;}
+  .badge-placeholder{
+    font-family:var(--font-data);
+    font-size:11px;
+    color:var(--text-muted);
+    border:1px dashed var(--line);
+    border-radius:8px;
+    padding:10px 14px;
+    text-align:center;
+  }
 
   /* ---------- Bottom contact bar ---------- */
   .contact-bar{
@@ -353,7 +370,6 @@
   <!-- EXPERIENCE -->
   <section class="content full-section">
     <span class="eyebrow">Professional Experience</span>
-    <h2>Where I've put this to work</h2>
 
     <div class="exp-list">
       <div class="exp-card">
@@ -408,16 +424,28 @@
         <h4>Data Fundamentals</h4>
         <p>IBM SkillsBuild</p>
         <span class="cert-date">Aug 2026</span>
+        <div class="cert-badge">
+          <img src="badge-1.png" alt="Data Fundamentals badge" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+          <span class="badge-placeholder">Add badge</span>
+        </div>
       </div>
       <div class="cert-card">
         <h4>Introduction to Python</h4>
         <p>DataCamp</p>
         <span class="cert-date">Sep 2026</span>
+        <div class="cert-badge">
+          <img src="badge-2.png" alt="Introduction to Python badge" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+          <span class="badge-placeholder">Add badge</span>
+        </div>
       </div>
       <div class="cert-card">
         <h4>ISTQB Foundation Level</h4>
         <p>ISTQB</p>
         <span class="cert-date">Certified</span>
+        <div class="cert-badge">
+          <img src="badge-3.png" alt="ISTQB Foundation Level badge" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" onerror="this.style.display='none';">
+          <span class="badge-placeholder">Add badge</span>
+        </div>
       </div>
     </div>
   </section>
@@ -438,9 +466,9 @@
         <svg viewBox="0 0 24 24" fill="none"><path d="M6 3.5h3l1.5 4L8.5 9c.8 2 2.6 3.8 4.6 4.6l1.5-2 4 1.5v3c0 1-.9 1.9-2 1.8-6-.4-11-5.4-11.4-11.4-.1-1.1.8-2 1.8-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
         +20 109 897 1541
       </a>
-      <a class="contact-pill" href="https://linkedin.com/in/hanawagdii" target="_blank" rel="noopener">
+      <a class="contact-pill" href="https://www.linkedin.com/in/hana-wagdy" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none"><path d="M6.5 8.5v9M6.5 5.5v.01M11 17.5v-5.2c0-1.5 1-2.3 2.3-2.3 1.3 0 2.2.8 2.2 2.3v5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="3.5" y="3.5" width="17" height="17" rx="3" stroke="currentColor" stroke-width="1.8"/></svg>
-        linkedin.com/in/hanawagdii
+        linkedin.com/in/hana-wagdy
       </a>
     </div>
   </div>
